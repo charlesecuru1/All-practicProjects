@@ -1,0 +1,70 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Guess the Number</title>
+
+    <link href="style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <header>
+      <p class="again">
+        <button class="bat" type="submit">Again!</button>
+      </p>
+      <p class="select-range">
+        (Between 1 and <span class="range-choice">10</span>)
+      </p>
+    </header>
+    <section>
+      <h1 class="main-heading">Guess The Number</h1>
+    </section>
+    <span class="bar"></span>
+    <span class="main-score">?</span>
+
+    <form action="#" class="user-guess-sec">
+      <p>
+        <input type="number" minlength="1" maxlength="20" class="guess-value" />
+      </p>
+      <p>
+        <button class="check">Check!</button>
+      </p>
+    </form>
+
+    <section class="score-displays">
+      <p class="win">
+        <label class="single-guess score-reading">🎉 Score Value</label>
+      </p>
+      <p class="score">
+        <label>💯 Score:</label>
+        <label class="score-value">20</label>
+      </p>
+      <p class="high-score">
+        <label>🦺 Hight Score:</label>
+        <label class="high-score">00</label>
+      </p>
+    </section>
+    <div class="linkHome">
+      <a href="modal.html">Model Over</a>
+      <a href="../JonasSchem/pigGame/pigGame.html">Pig Game</a>
+      <a href="../JonasSchem/Banking/bank.html">Bank App</a>
+      <a href="../JonasSchem/BankishWeb/bankish.html">Bankish</a>
+      <a href="../JonasSchem/Mapty/mapty.html">Mapty</a>
+      <a href="/AsyncJS/apis.html">APIS</a>
+      <a href="/forkify/recipe.html">Forkify</a>
+    </div>
+    <select id="select">
+      <option value="#">---choose---</option>
+      <option value="once">Once</option>
+      <option value="twice">Twice</option>
+      <option value="thrice">Thrice</option>
+      <option value="fouth">Forth</option>
+      <option value="fifth">Fifth</option>
+      <option value="color">Color</option>
+    </select>
+    <script src="gaming.js"></script>
+    <script src="scriptmdn.js"></script>
+  </body>
+</html>

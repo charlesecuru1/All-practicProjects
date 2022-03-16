@@ -1,0 +1,21 @@
+{
+  "name": "recipe",
+  "version": "1.0.0",
+  "default": "recipe.html",
+  "scripts": {
+    "start": "parcel forkify/recipe.html",
+    "build": "parcel build forkify/recipe.html --dist-dir ./dist"
+  },
+  "author": "Charles",
+  "license": "ISC",
+  "description": "a working recipe app",
+  "devDependencies": {
+    "parcel": "^2.3.2"
+  },
+  "dependencies": {
+    "core-js": "^3.21.1",
+    "fractional": "^1.0.0",
+    "regenerator-runtime": "^0.13.9",
+    "sass": "^1.49.9"
+  }
+}
