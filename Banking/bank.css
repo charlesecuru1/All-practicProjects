@@ -1,0 +1,262 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #fefefe;
+  height: 100vh;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.app {
+  position: relative;
+  max-width: 100rem;
+  margin: 4rem auto;
+  display: grid;
+  grid-template-columns: 4fr 3fr;
+  grid-template-rows: auto repeat(3, 15rem) auto;
+  gap: 2rem;
+
+  opacity: 0;
+  transition: all 4s;
+}
+
+header {
+  position: absolute;
+  align-content: space-between;
+  width: 100%;
+  top: 2px;
+  padding: 10px;
+  /* background-color: rgb(184, 129, 59); */
+}
+header > form {
+  float: right;
+  display: block;
+}
+
+header > p {
+  position: absolute;
+}
+.greetings {
+  left: 5%;
+  font-size: 24px;
+}
+.logo {
+  right: 60%;
+}
+
+.inn-log {
+  width: 28%;
+  display: inline;
+  margin: 6px;
+  border-radius: 4px;
+  outline: none;
+  font-size: 14px;
+  height: 26px;
+  color: #131309;
+  background-color: rgb(190, 183, 183);
+  text-align: center;
+  border: none;
+  transition: all 0.2s;
+}
+.login {
+  cursor: pointer;
+  font-size: 22px;
+}
+/* --------------header ------- */
+.balance-section {
+  /* background-color: rgb(187, 187, 36); */
+  top: 10%;
+  color: #201d1d;
+  left: 10%;
+  font-size: 26px;
+  width: 80%;
+  position: absolute;
+}
+.current-balance {
+  float: left;
+}
+.current-amount {
+  float: right;
+}
+
+/* ------Main User interface Update -----  */
+.main-ui {
+  background-color: rgba(190, 188, 188, 0.226);
+  width: 45%;
+  height: 60%;
+  top: 22%;
+  left: 10%;
+  position: absolute;
+  overflow: scroll;
+  padding: 6px;
+  border-radius: 10px;
+}
+
+.account-activities {
+  top: 22%;
+  /* background-color: burlywood; */
+  width: 33%;
+  height: 60%;
+  display: block;
+  position: absolute;
+  right: 10%;
+}
+.account-activities div {
+  padding: 2px;
+  margin-bottom: 20px;
+  font-size: 20px;
+  font-weight: bold;
+  height: 30%;
+}
+
+.transfer-money {
+  background-image: linear-gradient(to top left, #ffb003, #ffcb02);
+  border-radius: 6px;
+  padding: 2px;
+}
+.request-loan {
+  background-image: linear-gradient(to top left, #39b385, #9be15d);
+  border-radius: 6px;
+}
+
+.close-account {
+  background-image: linear-gradient(to top left, #e52a5a, #ff5851);
+  border-radius: 6px;
+}
+
+.inputb {
+  background-color: #cdcece;
+  border-radius: 8px;
+  font-size: 18px;
+  width: 30%;
+  font-family: inherit;
+  border: none;
+  color: inherit;
+  margin: 10px;
+  transition: all 0.2s;
+  outline: none;
+  text-align: center;
+}
+.inputb ::placeholder {
+  color: #bbb;
+}
+.lab {
+  font-size: 16px;
+  font-weight: 100;
+  padding: 15px;
+  position: relative;
+  width: 10%;
+}
+
+.btn {
+  border-radius: 3px;
+  width: 13%;
+  border: none;
+  cursor: pointer;
+  background-color: rgba(255, 255, 255, 0.9);
+}
+
+/* -----------footer----------  */
+.footer {
+  top: 82%;
+  margin: 3px;
+  width: 80%;
+  height: 8%;
+  position: absolute;
+  right: 10%;
+  /* background-color: #66cb73; */
+}
+
+.ddd {
+  font-weight: 900;
+  font-size: 12px;
+}
+
+.innb {
+  color: #39b385;
+  font-size: 20px;
+  padding: 10px;
+}
+
+.inna {
+  color: #e52a5a;
+  font-size: 20px;
+  padding: 5px;
+}
+.logout {
+  display: inline;
+  position: absolute;
+  right: 2%;
+  /* background-color: #e52a5a; */
+  top: 3%;
+  font-weight: 700;
+}
+.movement-row {
+  /* background-color: #249b6d; */
+  position: relative;
+  padding: 6px 10px;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: stretch;
+  display: flex;
+  font-size: 16px;
+}
+.movement-value {
+  /* background-color: #e52a5a; */
+  margin-left: auto;
+}
+.movement__date {
+  background-color: #ffb003;
+  text-transform: uppercase;
+  border-radius: 4px;
+  font-weight: 500;
+  color: #666;
+  margin-left: 28px;
+  font-size: 16px;
+}
+
+/* .movement-index {
+  font-size: 20px;
+  margin-right: 10px;
+  color: #010211;
+  background-color: #85858a;
+  border-radius: 4px;
+} */
+.movement-type--Deposit {
+  background-image: linear-gradient(to top all, #39b385, #9be15d);
+  background-color: #39b385;
+  border-radius: 4px;
+  width: 92px;
+  padding: 2px;
+  font-size: 16px;
+}
+.movement-type--Withdrawal {
+  background-image: linear-gradient(to top all, #e52a5a, #ff5851);
+  background-color: #e52a5a;
+  border-radius: 4px;
+  padding: 2px;
+  font-size: 16px;
+}
+
+.btn-sort {
+  color: #131309;
+}
+.sirt {
+  cursor: pointer;
+}
+.summary__value--in,
+.summary__value-interest {
+  color: #66cb73;
+}
+.summary__value-out {
+  color: #f5465d;
+}
+
+.sort {
+  cursor: pointer;
+  font-size: 18px;
+  padding: 4px;
+}

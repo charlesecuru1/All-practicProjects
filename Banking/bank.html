@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bikonya</title>
+
+    <link rel="shortcut icon" type="image/png" href="/images/dice-6.png">
+    <link href="bank.css" rel="stylesheet">
+  </head>
+  <body>
+    <header>
+      <p class="greetings">Greetings ...</p>
+      <p class="logo">Logo</p>
+      <p class="login-section">
+          <form for="login" >
+              <input class="inn-log login__input--user" type="text" id="use-name" placeholder="User">
+              <input class="inn-log login__input--pin" type="text" id="password" placeholder="Pin">
+              <button class="login login__btn">&RightArrow;</button>
+          </form>
+      </p>
+    </header>
+    <main class="app">
+    <section class="balance-section">
+        <div class="current-balance">
+            <p>Current Balance</p>
+            <p class="date-display">As of Jan/13/2022, time</p>
+        </div>
+        <div class="current-amount"> $16,720.00</div>
+    </section>
+
+    <section class="main-ui" id="main-ui">
+        <div class="movements"></div>
+    </section>
+    <section class="account-activities">
+    <div class="transfer-money">
+        <label for="transfer-money" class="main-lab">Transfer Money</label>
+        <p>
+            <input class="inputb" type="text" id="transefer-to-input">
+            <input class="inputb" type="text" id="transfer-amount">
+            <button id="transfer-arrow" class="btn"> &RightArrow;</button>
+        </p>
+        <p>
+            <label class="lab">Trasnfer to</label>
+            <label class="lab">Amount</label>
+        </p>
+    </div>
+
+    <div class="request-loan">
+        <p><label for="request-loan" class="main-lab"> Request Loan</label></p>
+        <p>
+            <input class="inputb" type="text" name="request" id="request-loan">
+            <button class="btn btn-request-loan">&rightarrow;</button>
+    
+        </p>
+        <p><label class="lab">Amount</label></p>
+    </div>
+    <div class="close-account">
+        <p><label for="close" class="main-lab">Close account</label></p>
+        <p>
+            <input class="inputb" type="text" id="close-user-confirm">
+        <input class="inputb" type="text" id="close-password-confirm">
+        <button class="btn close-account" >&RightArrow;</button>
+        </p>
+        <p>
+            <label class="lab">Confirm user</label>
+            <label class="lab">Confirm Pin</label>
+        </p>
+    </div>
+    </section>
+    <section class="footer">
+
+<p>
+    <label class="ddd">IN <span class="innb inflows">$21,900.00</span></label>
+    <label class="ddd">OUT <span class="inna outflows">$5,180.00</span></label>
+    <label class="ddd">INTEREST<span class="innb interest">$328,50</span></label>
+    <label class="ddd sirt"><span class="sort">&DownArrow;</span>SORT</label>
+    <label for="logout" class="logout logout-timer">You will be logged out in 32sec</label>
+</p>
+    </section>
+</main>
+<script src="bank.js"></script>
+  </body>
+</html>

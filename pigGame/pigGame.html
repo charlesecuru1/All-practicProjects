@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The Pig Game!</title>
+    <link href="style.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <div class="main-div">
+      <h1 class="h-1">This is the pig Game!</h1>
+
+      <section class="player1 over-player1">
+        <p id="name--0">Player 1</p>
+        <p class="player1-score score" id="score--0">6</p>
+        <div class="p-player">
+          <p class="current-1"><label>Current</label></p>
+          <p class="value1" id="current--0">00</p>
+        </div>
+      </section>
+
+      <section class="player2 over-player2">
+        <p id="name--1">Player2</p>
+        <p class="player2-score score" id="score--1">4</p>
+        <div class="p-player">
+          <p class="current-1"><label>Current</label></p>
+          <p class="value2" id="current--1">00</p>
+        </div>
+      </section>
+
+      <div class="middle-content">
+        <button class="new-game">🔄NEW GAME</button>
+        <span><img class="dice" src="/images/dice-1.jpeg" width="70%" /></span>
+        <button class="roll-dice">🎲ROLL DICE</button>
+        <button class="hold" id="hold">📤HOLD</button>
+      </div>
+      <div class="over-player1"></div>
+      <div class="over-player2"></div>
+    </div>
+
+    <script src="pigGame.js"></script>
+  </body>
+</html>

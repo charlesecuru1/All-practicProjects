@@ -1,0 +1,311 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #0c810c;
+  /* background-color: rgba(17, 17, 16, 0.133); */
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.again {
+  background-color: rgb(255, 254, 254);
+  display: inline-block;
+  margin: 19px;
+  padding: 10px;
+  border: none;
+}
+
+.bat {
+  font-size: 36px;
+  width: 160px;
+  height: 60p;
+  flood-color: black;
+  border: none;
+  background-color: #fff;
+}
+
+.select-range {
+  color: rgb(238, 235, 235);
+  background-color: rgb(22, 134, 12);
+  display: inline;
+  font-size: 38px;
+  margin-right: 15px;
+  float: right;
+}
+
+.main-heading {
+  color: rgb(233, 230, 230);
+  font-size: 80px;
+  font-family: sans-serif;
+  text-align: center;
+}
+.bar {
+  background-color: white;
+  height: 10px;
+  display: grid;
+  position: relative;
+  margin: 15px;
+  top: 120px;
+  border: 2px solid rgb(134, 130, 130);
+  z-index: 2;
+}
+.main-score {
+  color: rgb9(15, 15, 2);
+  background: rgb(248, 248, 248);
+  position: relative;
+  left: 450px;
+
+  font-size: 180px;
+  border: 2px solid rgb(85, 76, 76);
+  z-index: 9;
+  font-family: serif;
+}
+
+.user-guess-sec {
+  position: absolute;
+  top: 400px;
+  margin: 100px;
+}
+
+.guess-value {
+  font-size: 34px;
+  text-align: center;
+  height: 50px;
+  color: rgb(12, 10, 10);
+  border-radius: 12px solid #fff;
+}
+
+.check {
+  font-size: 32px;
+  border-radius: 6px solid #fff;
+  margin-left: 95px;
+  margin-top: 20px;
+  background-color: #fff;
+  border: none;
+  margin: 10px 100px;
+  padding: 10px;
+}
+
+.score-displays {
+  /* background-color: #fff; */
+  position: relative;
+  float: right;
+  width: 320px;
+  height: 120px;
+  font-size: 34px;
+  top: 210px;
+  color: #fff;
+  margin-right: 160px;
+  text-align: justify;
+  align-content: space-around;
+}
+
+.score-displays p {
+  margin-top: 20px;
+}
+
+.linkHome {
+  display: inline;
+  background-color: #888080;
+  font-size: 20px;
+  width: 90%;
+  top: 90px;
+  position: absolute;
+}
+.linkHome a {
+  background-color: #f7f703;
+  border: #fff solid;
+  border-radius: 20px;
+  padding: 3px;
+  margin: 4px;
+  text-decoration: none;
+  transform: translate(-10px, -10px);
+}
+/* ----------------------------------Project two -------------------- */
+.butt {
+  color: #0f0f0c;
+  border-radius: 12px;
+  display: inline;
+  align-content: space-between;
+  font-size: 28px;
+  padding: 8px;
+  margin: 20px;
+}
+.model {
+  position: absolute;
+  left: 50%;
+  left: 50%;
+  width: 70%;
+  transform: translate(-50%, -5%);
+  border-radius: 8px;
+
+  background-color: beige;
+  padding: 2rem;
+  box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.3);
+  z-index: 10;
+}
+
+.model button {
+  float: right;
+  color: red;
+  font-size: 20px;
+  margin: 6px;
+}
+.hidden {
+  display: none;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #72726ea1;
+  z-index: 3;
+}
+
+/* ----------------------------The Pig Game------------------ */
+
+.h-1 {
+  font-size: 50px;
+  background-image: linear-gradient(to top right, #938900 10%, #ff0000 100%);
+  width: 70%;
+  display: block;
+  position: inherit;
+  text-align: center;
+  border-radius: 10px;
+  top: 5%;
+  text-transform: uppercase;
+  left: 15%;
+}
+.main-div {
+  position: absolute;
+  background-image: linear-gradient(to top left, #753682cb 42%, #bf2e34 100%);
+  width: 100%;
+  height: 100%;
+}
+
+.player1 {
+  background: #f7181899;
+  width: 35%;
+  height: 70%;
+  display: inline;
+  font-size: 30px;
+  text-align: center;
+  text-transform: uppercase;
+  position: absolute;
+  padding: 5%;
+  left: 15%;
+  top: 15%;
+  z-index: 4;
+}
+
+.player2 {
+  background: #f7181899;
+  width: 35%;
+  text-transform: uppercase;
+  height: 70%;
+  padding: 5%;
+  font-size: 30px;
+  text-align: center;
+  display: inline;
+  position: absolute;
+  right: 15%;
+  top: 15%;
+  z-index: 4;
+}
+
+.score {
+  font-size: 70px;
+  padding: 40px;
+  color: #f7f703;
+}
+
+.p-player {
+  background-color: brown;
+  width: 80%;
+  margin: 5%;
+  color: #fff;
+  padding: 10%;
+  z-index: 6;
+}
+
+.middle-content {
+  /* background-color: aqua; */
+  display: block;
+  text-align: center;
+  top: 15%;
+  align-content: center;
+  position: absolute;
+  width: 15%;
+  left: 42.5%;
+  height: 70%;
+  z-index: 9;
+}
+
+.new-game {
+  color: #ec0bec;
+  border-radius: 10px;
+  padding: 0;
+  margin: 2px;
+  font-size: 18px;
+  margin-top: 20%;
+}
+
+.dice {
+  margin-top: 40%;
+  position: relative;
+}
+.roll-dice {
+  border-radius: 12px;
+  font-size: 18px;
+  font-family: 'Arial Narrow', Arial, sans-serif;
+  padding: 4px;
+  color: #f10f0f;
+  display: block;
+  margin-top: 50%;
+  position: relative;
+  display: inline;
+}
+
+.hold {
+  border-radius: 12px;
+  padding: 3px;
+  color: rgb(233, 10, 10);
+  margin: 30px 1px 1px 20px;
+  font-size: 18px;
+  position: relative;
+  display: inline;
+  top: 3%;
+  outline: none;
+}
+
+.over-player1 {
+  width: 35%;
+  height: 70%;
+  background: #2521217a;
+  display: block;
+  left: 15%;
+  top: 15%;
+  position: absolute;
+  z-index: 2;
+}
+.over-player2 {
+  width: 35%;
+  height: 70%;
+  background: #2521217a;
+  position: absolute;
+  display: block;
+  top: 15%;
+  right: 15%;
+  z-index: 2;
+}
+
+.point {
+  outline: 0;
+  box-shadow: none;
+}
